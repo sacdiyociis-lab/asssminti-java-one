@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let guess = Number(prompt("Guess a number?"));
+        let attempt = 1;
+        while (guess != 15) {
+            guess = Number(prompt("Guess a number?"));
+            if (guess > 15) { console.log("Right number?"); }
+            else { console.log("Low number"); } attempt++;
+            if (attempt == 5) { break; }
+
+        }
+        console.log("Your attempt is too much", attempt);
+    </script>
+</body>
+
+</html>
